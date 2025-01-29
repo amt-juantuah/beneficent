@@ -1,16 +1,12 @@
 import Image from "next/image";
 import Header from "./_components/Header";
+import Banner from "./_components/Home/Banner";
 
 export default function Home() {
   return (
-    <div className="">
+    <div className="container mx-auto p-3 lg:px-4">
       <Header />
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <h1>Welcome My Friend</h1>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <p>Footer</p>
-      </footer>
+      <Banner />
     </div>
   );
 }
