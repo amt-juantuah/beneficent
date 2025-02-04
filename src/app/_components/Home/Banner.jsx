@@ -45,9 +45,6 @@ const Banner = ({col, to}) => {
                   >
                     Download Now
                   </motion.button>
-                  <p className="text-gray-400 text-sm">
-                    14-day free trial • No credit card required
-                  </p>
                 </div>
               </motion.div>
 
