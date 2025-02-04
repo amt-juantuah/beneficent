@@ -9,11 +9,11 @@ import {
   NewspaperIcon
 } from "@heroicons/react/24/outline";
 
-import { FaHandsHelping, FaHeart, FaUsers, FaCar } from "react-icons/fa";
+import { FaHandsHelping, FaHeart, FaUsers, FaCar, FaUserNurse } from "react-icons/fa";
 import { MdChat, MdElderly, MdOutlineAccessibilityNew, MdOutlineLocalDining } from "react-icons/md";
 import { IoIosPeople, IoIosCalendar } from "react-icons/io";
-import { GiHouseKeys, GiMedicalPack, GiHealthNormal } from "react-icons/gi";
-import { RiTeamLine, RiPriceTag3Line } from "react-icons/ri";
+import { GiHouseKeys, GiMedicalPack, GiHealthNormal, GiChefToque } from "react-icons/gi";
+import { RiTeamLine, RiPriceTag3Line, RiHotelLine } from "react-icons/ri";
 import { HiOutlineShieldCheck } from "react-icons/hi";
 import { AiOutlineSafetyCertificate, AiOutlineSchedule, AiOutlineSolution } from "react-icons/ai";
 
@@ -168,11 +168,11 @@ import { FiTruck, FiUsers } from "react-icons/fi";
           description: "Explore the wide range of care services offered by Beneficent.",
           icon: MdElderly,
           submenu: [
-            { name: "Companionship", href: "/services/non-regulated/companionship", description: "Emotional support and social engagement for clients.", icon: IoIosPeople },
-            { name: "Domestic Assistance", href: "/services/non-regulated/domestic-assistance", description: "Help with household chores and daily tasks.", icon: FaHandsHelping },
-            { name: "Meal Preparation", href: "/services/non-regulated/meal-preparation", description: "Assistance with preparing nutritious meals.", icon: MdOutlineLocalDining },
-            { name: "Errands & Transportation", href: "/services/non-regulated/errands-transportation", description: "Transportation and help with errands like shopping.", icon: FaCar },
-            { name: "Lifestyle Support", href: "/services/non-regulated/lifestyle-support", description: "Assistance with maintaining a fulfilling lifestyle.", icon: IoIosCalendar }
+            { name: "Companionship and a Friend", href: "/services/non-regulated/companionship", description: "Emotional support and social engagement for clients.", icon: IoIosPeople },
+            { name: "Daily Living Support", href: "/services/non-regulated/domestic-assistance", description: "Help with household chores and daily tasks.", icon: FaHandsHelping },
+            { name: "Light Meal Preparation", href: "/services/non-regulated/meal-preparation", description: "Assistance with preparing nutritious meals.", icon: MdOutlineLocalDining },
+            { name: "Errands & Shopping", href: "/services/non-regulated/errands-transportation", description: "Help with errands like shopping.", icon: FaCar },
+            { name: "Lifestyle Support (flowering, reading, etc)", href: "/services/non-regulated/lifestyle-support", description: "Assistance with maintaining a fulfilling lifestyle.", icon: IoIosCalendar }
           ]
         }, 
         // {
@@ -194,77 +194,77 @@ import { FiTruck, FiUsers } from "react-icons/fi";
         
         {
           name: "Cleaning Services",
-          href: "/cleaning-services",
+          href: "/cleaning",
           description: "Discover cleaning services provided by Beneficent.",
           icon: CogIcon,
           submenu: [
             {
-              name: "Home Move-In Cleaning",
-              href: "/other-services/home-move-in-cleaning",
-              description: "Thorough cleaning for homes before moving in.",
+              name: "Home Move-In / Move-Out Cleaning",
+              href: "/cleaning/home-move-cleaning",
+              description: "Thorough cleaning for homes before moving in and after moving out.",
               icon: BsFillHouseFill,
             },
             {
-              name: "Home Move-Out Cleaning",
-              href: "/other-services/home-move-out-cleaning",
-              description: "Professional cleaning services for homes before moving out.",
-              icon: FiTruck,
-            },
-            {
-              name: "New House Cleaning",
-              href: "/other-services/new-house-cleaning",
-              description: "Deep cleaning services for new properties.",
+              name: "Offices and New House Cleaning",
+              href: "/cleaning/new-house-cleaning",
+              description: "Professional cleaning for new properties and office environments.",
               icon: BiBuildingHouse,
             },
             {
-              name: "Construction Cleaning",
-              href: "/other-services/construction-cleaning",
+              name: "Construction and Commercial Cleaning",
+              href: "/cleaning/construction-cleaning",
               description: "Post-construction cleaning for safe and tidy spaces.",
               icon: AiOutlineSafetyCertificate,
             },
             {
               name: "House Cleaning",
-              href: "/other-services/house-cleaning",
+              href: "/cleaning/house-cleaning",
               description: "Comprehensive cleaning solutions for homes.",
               icon: MdOutlineLocalDining,
             },
             {
-              name: "Office Cleaning",
-              href: "/other-services/office-cleaning",
-              description: "Professional cleaning for office environments.",
-              icon: BriefcaseIcon,
-            },
-            {
-              name: "Deep Cleaning",
-              href: "/other-services/deep-cleaning",
-              description: "Intensive cleaning services for residential and commercial properties.",
+              name: "Kitchen Deep Cleaning",
+              href: "/cleaning/kitchen-deep-cleaning",
+              description: "Intensive kitchen cleaning services for residential and commercial properties.",
               icon: AiOutlineSchedule,
             },
           ],
         },
         {
           name: "Staffing",
-          href: "/staffing-services",
+          href: "/staffing",
           description: "Discover Staffing support services provided by Beneficent.",
           icon: CogIcon,
           submenu: [
             {
-              name: "Hotel and Factory Agency Support",
-              href: "/other-services/hotel-factory-support",
-              description: "Staffing solutions for hotel and factory operations.",
-              icon: FiUsers,
+              name: "Care & Support Workers",
+              href: "/staffing/care-workers",
+              description: "Experienced care workers available for home and facility care.",
+              icon: IoIosPeople,
             },
             {
-              name: "Kitchen Porter",
-              href: "/other-services/kitchen-porter",
-              description: "Support staff for kitchen management and cleaning.",
-              icon: MdOutlineLocalDining,
+              name: "Nurses",
+              href: "/staffing/nurses",
+              description: "Qualified nurses for medical care and support.",
+              icon: FaUserNurse,
             },
             {
-              name: "Kitchen Assistant",
-              href: "/other-services/kitchen-assistant",
-              description: "Assistance with kitchen operations and meal preparation.",
+              name: "Hotel and Factory Workers",
+              href: "/staffing/hotel-factory-workers",
+              description: "Reliable staffing for hotels, factories, and industrial sites.",
+              icon: RiHotelLine,
+            },
+            {
+              name: "Kitchen Assistants",
+              href: "/staffing/kitchen-assistants",
+              description: "Skilled kitchen staff to assist with food preparation and hygiene.",
               icon: FaHandsHelping,
+            },
+            {
+              name: "Kitchen Porters",
+              href: "/staffing/kitchen-porters",
+              description: "Support staff for maintaining kitchen cleanliness and efficiency.",
+              icon: GiChefToque,
             },
           ]
         },

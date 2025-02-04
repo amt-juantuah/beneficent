@@ -29,30 +29,9 @@ import {
  } from './JSON'
 import { Button } from '@/components/ui/button'
 
-const services = [
-  { name: 'Hourly Home Care', description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-  { name: 'Companionship Services', description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Short-Term Respite Care', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
-  { name: 'Dementia and Alzheimer’s Care', description: 'Connect with third-party tools', href: '#', icon: SquaresPlusIcon },
-  { name: 'Overnight and Live-In Care', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
-  { name: 'Post-Hospital Discharge Care', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
-  { name: 'Overnight and Live-In Care', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
-  { name: 'Palliative and End-of-Life Care', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
-  { name: 'Specialized Disability Care', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
-  { name: 'Mental Health Support Services', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
-  { name: 'Housekeeping', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
-  { name: 'Home Cleaning', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
-  { name: 'Office Cleaning', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
-  { name: 'Commercial Kitchen Cleaning', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
-  { name: 'Commercial Kitchen Support', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
-  { name: 'Industrial Cleaning Support', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
-  { name: 'Commercial Kitchen Cleaning', description: 'Build strategic funnels that will convert', href: '#', icon: ArrowPathIcon },
-]
-
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
   return (
     <header className="bg-white">
       <nav aria-label="Global" className="mx-auto flex  items-center justify-between pb-6">
@@ -78,7 +57,7 @@ export default function Header() {
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-          {navbarItems.map((item) => (<Popover className="relative">
+          {navbarItems.map((item, x) => (<Popover key={x} className="relative">
             <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900">
               {item.name}
               <ChevronDownIcon aria-hidden="true" className="size-5 flex-none text-gray-400" />
@@ -163,7 +142,7 @@ export default function Header() {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y divide-gray-500/10">
               <div className="space-y-2 py-6">
-                {navbarItems.map((item) => (<Disclosure as="div" className="-mx-3">
+                {navbarItems.map((item, y) => (<Disclosure key={y} as="div" className="-mx-3">
                   <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
                     {item.name}
                     <ChevronDownIcon aria-hidden="true" className="size-5 flex-none group-data-[open]:rotate-180" />
