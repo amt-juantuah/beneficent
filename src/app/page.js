@@ -10,9 +10,9 @@ export default function Home() {
       <Header />
       <Hero />
       <Divider />
-      <Banner col="green" />
-      <Banner col="indigo" />
-      <Banner col="green" />
+      <Banner />
+      <Banner />
+      <Banner />
     </div>
   );
 }
