@@ -39,7 +39,7 @@ const Banner = () => {
                   <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="w-full md:w-auto bg-indigo-600 text-white px-8 py-3 hover:bg-indigo-500 transition-colors duration-200 text-lg font-medium"
+                    className="w-full md:w-auto bg-indigo-600 text-white px-24 py-3 hover:bg-indigo-500 transition-colors duration-200 text-lg font-medium"
                   >
                     Download Now
                   </motion.button>
