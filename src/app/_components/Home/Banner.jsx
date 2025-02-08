@@ -27,13 +27,13 @@ const Banner = () => {
                 transition={{ duration: 0.8, delay: 0.2 }}
                 className="text-center md:text-left"
               >
-                <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-                  Transform Your Business with Our Solution
-                </h1>
+                <h4 className="text-4xl md:text-3xl font-bold text-gray-500 mb-6">
+                  Companionship
+                </h4>
                 <p className="text-gray-500 text-lg mb-8">
-                  Experience the next generation of business management. Our platform
-                  helps you streamline operations, boost productivity, and drive
-                  growth with powerful, intuitive tools.
+                Our dedicated companions spend quality time with you or your loved one, 
+                engaging in meaningful conversations, sharing hobbies, or simply enjoying 
+                each other’s company to alleviate loneliness and foster connection
                 </p>
                 <div className="space-y-4">
                   <motion.button
@@ -41,7 +41,7 @@ const Banner = () => {
                     whileTap={{ scale: 0.95 }}
                     className="w-full md:w-auto bg-indigo-600 text-white px-24 py-3 hover:bg-indigo-500 transition-colors duration-200 text-lg font-medium"
                   >
-                    Download Now
+                    Explore further
                   </motion.button>
                 </div>
               </motion.div>
