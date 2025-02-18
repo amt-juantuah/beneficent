@@ -28,10 +28,11 @@ const Hero = () => {
                 transition={{ duration: 0.8 }}
                 className="relative"
               >
+                
                 <img
-                  src="/assets/images/touching_hands_care.jpg"
+                  src="/assets/images/Subject.png"
                   alt="Hero Care"
-                  className="w-4.5/5 mx-auto rounded shadow-2xl transform hover:scale-105 transition-transform duration-300"
+                  className="w_50_  sm:w_70_ mx-auto rounded  transform hover:scale-105 transition-transform duration-300"
                   loading="lazy"
                 />
               </motion.div>
