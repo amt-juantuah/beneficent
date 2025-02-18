@@ -31,7 +31,7 @@ const Hero = () => {
                 <img
                   src="/assets/images/Subject.png"
                   alt="Hero Care"
-                  className="w_50_  sm:w_70_ mx-auto rounded  transform hover:scale-105 transition-transform duration-300"
+                  className="w_50_ mx-auto rounded  transform hover:scale-105 transition-transform duration-300"
                   loading="lazy"
                 />
               </motion.div>
