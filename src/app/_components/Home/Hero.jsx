@@ -28,7 +28,6 @@ const Hero = () => {
                 transition={{ duration: 0.8 }}
                 className="relative"
               >
-                
                 <img
                   src="/assets/images/Subject.png"
                   alt="Hero Care"
