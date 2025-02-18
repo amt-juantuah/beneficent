@@ -11,8 +11,6 @@ export default function Home() {
       <Hero />
       <Divider />
       <Banner />
-      <Banner />
-      <Banner />
     </div>
   );
 }
