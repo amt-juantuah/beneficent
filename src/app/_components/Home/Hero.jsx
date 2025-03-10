@@ -29,9 +29,9 @@ const Hero = () => {
                 className="relative"
               >
                 <img
-                  src="/assets/images/Subject.png"
+                  src="/assets/images/care1.jpg"
                   alt="Hero Care"
-                  className="w_50_ mx-auto rounded  transform hover:scale-105 transition-transform duration-300"
+                  className="mx-auto rounded  transform hover:scale-105 transition-transform duration-300"
                   loading="lazy"
                 />
               </motion.div>
