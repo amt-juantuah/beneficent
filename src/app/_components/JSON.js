@@ -6,10 +6,20 @@ import {
   BookOpenIcon,
   PhoneIcon,
   BriefcaseIcon,
-  NewspaperIcon
+  NewspaperIcon,
+  MapPinIcon, 
+  UserGroupIcon, 
+  LifebuoyIcon,
+  ClipboardListIcon 
 } from "@heroicons/react/24/outline";
 
-import { FaHandsHelping, FaHeart, FaUsers, FaCar, FaUserNurse } from "react-icons/fa";
+import { FaHandsHelping, FaHeart, FaUsers, FaCar, FaUserNurse,
+  FaPhone, 
+  FaMapMarkerAlt, 
+  FaClipboardCheck, 
+  FaUserPlus, 
+  FaLifeRing 
+ } from "react-icons/fa";
 import { MdChat, MdElderly, MdOutlineAccessibilityNew, MdOutlineLocalDining } from "react-icons/md";
 import { IoIosPeople, IoIosCalendar } from "react-icons/io";
 import { GiHouseKeys, GiMedicalPack, GiHealthNormal, GiChefToque } from "react-icons/gi";
@@ -126,7 +136,47 @@ import { FiTruck, FiUsers } from "react-icons/fi";
     export const callsToAction = [
       { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
       { name: 'Contact sales', href: '#', icon: PhoneIcon },
-    ]
+    ];
+
+
+    export const actionPoint = {
+      telX: "0744443434344",
+      emY: "beneficentcare@yahoo.com",
+    }
+
+    export const heroCapture = {
+      title: "To us, Care means kindness and Generousity",
+      details: "We are keen about doing good, being kind, and being generous."
+    }
+    
+
+    export const servicesSteps = [
+      {
+        step: "Initial Conversation",
+        detail: "Begin your journey with Beneficent by sharing your unique care needs in an initial conversation. Our welcoming team listens closely, setting a personalized foundation for your experience",
+        icon: FaPhone,
+      },
+      {
+        step: "Visit for Assessment",
+        detail: "A  dedicated care consultant visits you, or connects via video call, to conduct a comprehensive assessment. We capture your physical, emotional, and lifestyle requirements using modern tools and empathetic dialogue",
+        icon: FaMapMarkerAlt,
+      },
+      {
+        step: "Customized Care Plan",
+        detail: "Together, we create a custom care plan that adapts with flexible scheduling, personalized caregiver matching, and technology-driven monitoring as your needs evolve",
+        icon: FaClipboardCheck,
+      },
+      {
+        step: "Seamless Onboarding",
+        detail: "Transition smoothly into our services with a personal introduction to your dedicated care team. We ensure you feel informed, supported, and confident in your care arrangement from day one",
+        icon: FaUserPlus,
+      },
+      {
+        step: "Continuous Support",
+        detail: "Enjoy regular follow-ups, feedback, and care plan adjustments to ensure evolving, high-quality support.",
+        icon: FaLifeRing,
+      },
+    ];
 
     
     export const navbarItems = [

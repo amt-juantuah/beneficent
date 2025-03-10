@@ -92,6 +92,11 @@ body {
   font-size: larger;
 }
 
+.col-prim {
+  font-style: normal;
+  color: #5001fd;
+}
+
 .w_50_ {
   width: 50%;
 }

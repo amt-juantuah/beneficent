@@ -3,6 +3,7 @@
 import React, {useState, useEffect} from 'react'
 import { motion } from "framer-motion";
 import { Button } from '@/components/ui/button';
+import { heroCapture } from '../JSON';
 
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -47,12 +48,10 @@ const Hero = () => {
                 Welcome to <span className='beneficent-l'>Beneficent</span> Care & Support
                 </h1>
                 <h2 className="text-2xl md:text-2xl font-bold text-gray-900 mb-6">
-                  To us, Care means kindness, Generousity and Mercy
+                  {heroCapture.title}
                 </h2>
                 <p className="text-gray-500 text-lg mb-8">
-                The name Beneficent means “doing good, being kind, and acting with generosity.” 
-                This reflects our mission: to provide exceptional, compassionate, and 
-                professional care services that enhance lives and bring comfort to those in need.
+                  {heroCapture.details}
                 </p>
                 <div className="flex flex-col md:flex-row md:flex-wrap gap-4 justify-left items-center">
                   <Button size="default" className=" text-sm/6 font-semibold text-white-900 md:w-auto">
