@@ -140,7 +140,7 @@ import { FiTruck, FiUsers } from "react-icons/fi";
 
 
     export const actionPoint = {
-      telX: "0744443434344",
+      telX: "07438731206",
       emY: "beneficentcare@yahoo.com",
     }
 
@@ -148,6 +148,45 @@ import { FiTruck, FiUsers } from "react-icons/fi";
       title: "To us, Care means kindness and Generousity",
       details: "We are keen about doing good, being kind, and being generous."
     }
+
+    export const aboutUs = {
+        contact: {
+          title: "How to Contact us",
+          tel: "07438731206",
+          name: "Beneficent Care and Support Office",
+          street: "79 College Road",
+          city: "London",
+          area: "Harrow",
+          postcode: "HA1 1BD"
+        },
+        vision: {
+          title: "Vision and Values",
+          submenu: [
+            {
+              title: "Our vision",
+              detail: "Our arch vision is to become a trusted partner in healthcare services in ways that demonstrate genuine kindness, love, and generousity with quality care and support",
+              lists: [],
+            },
+            {
+              title: "Our values",
+              detail: "Every member of our staff and management upholds the values of:",
+              lists: ["Kindness", "Tenderness", "Compliance", "Respect", "Generosity"],
+            },
+            {
+              title: "Our Mission",
+              detail: "Our mission is to provide tailored, reliable and compassionate care that meets the evolving needs of our community, delivered by highly equiped and empathetic professionals",
+              lists: [],
+            },
+         ]
+        },
+        history: {},
+        people: {},
+        environment: {},
+        community: {},
+        dataprotection: {},
+        media: {},
+      }
+     
     
 
     export const servicesSteps = [

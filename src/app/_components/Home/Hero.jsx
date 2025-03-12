@@ -54,13 +54,16 @@ const Hero = () => {
                   {heroCapture.details}
                 </p>
                 <div className="flex flex-col md:flex-row md:flex-wrap gap-4 justify-left items-center">
-                  <Button size="default" className=" text-sm/6 font-semibold text-white-900 md:w-auto">
+                  <a href='/about-us' className="rounded outline p-1.5 text-sm/6 font-bold md:w-auto hover:bg-indigo-200 transition-all transform-200">
+                    About Us <span aria-hidden="true">&rarr;</span>
+                  </a>
+                  <Button variant="outline" size="default" className=" text-sm/6 font-semibold text-white-900 md:w-auto">
                   Find Carers <span aria-hidden="true">&rarr;</span>
                   </Button>
-                  <Button size="default" className="text-sm/6 font-semibold text-white-900 md:w-auto">
+                  <Button variant="outline" size="default" className="text-sm/6 font-semibold text-white-900 md:w-auto">
                   Explore Services <span aria-hidden="true">&rarr;</span>
                   </Button>
-                  <Button size="default" className="text-sm/6 font-semibold text-white-900 md:w-auto">
+                  <Button variant="secondary" size="default" className="text-sm/6 font-semibold text-white-900 md:w-auto">
                     Jobs <span aria-hidden="true">&rarr;</span>
                   </Button>
                   {/* <motion.button
