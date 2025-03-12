@@ -6,9 +6,10 @@ import TableOne from '@/components/tableOne'
 
 const AboutUs = () => {
   return (
-    <div id='contact' className='container border-t border-gray-200 pt-4'>
+    <div id='about' className='container border-t border-gray-200 pt-4'>
+      <h2 className='text-2xl md:text-xl font-bold text-gray-500 mb-6 underline'>About us</h2>
         { aboutUs.contact &&
-          <div className="">
+          <div id='contact' className="">
             <h1 className='text-2xl md:text-2xl font-bold text-gray-900 mb-8'>{aboutUs.contact.title}</h1>
             <h2 className="text-2xl md:text-xl font-bold text-gray-900 mb-4">{aboutUs.contact.name}</h2>
             <p className="text-gray-500 text-lg mb-2">{aboutUs.contact.street}</p>
