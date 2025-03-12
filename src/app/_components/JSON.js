@@ -134,8 +134,8 @@ import { FiTruck, FiUsers } from "react-icons/fi";
 //     ]
 
     export const callsToAction = [
-      { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-      { name: 'Contact sales', href: '#', icon: PhoneIcon },
+      { name: 'See us working', href: '#', icon: PlayCircleIcon },
+      { name: 'Contact Office', href: 'tel:07438731206', icon: PhoneIcon },
     ];
 
 
@@ -375,12 +375,12 @@ import { FiTruck, FiUsers } from "react-icons/fi";
         // },
         {
           name: "Contact Us",
-          href: "/contact",
+          href: "/about-us",
           description: "Get in touch with Beneficent's care agency team.",
           icon: PhoneIcon,
           submenu: [
-            { "name": "Contact Information", "href": "/contact/info", icon: PhoneIcon, description: "Get in touch with Beneficent by contacting us", },
-            { "name": "Request a Consultation", "href": "/contact/request-consultation", icon: AiOutlineSolution, description: "Benefit from our consultation session", },
+            { "name": "Contact Information", "href": "/about-us/#contact", icon: PhoneIcon, description: "Get in touch with Beneficent by contacting us", },
+            { "name": "Request a Consultation", "href": "about-us#values", icon: AiOutlineSolution, description: "Benefit from our consultation session", },
             { "name": "Live Chat", "href": "/contact/live-chat", icon: MdChat, description: "Chat with one of our caring respondents" }
         ]
         },

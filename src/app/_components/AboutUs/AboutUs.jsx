@@ -6,7 +6,7 @@ import TableOne from '@/components/tableOne'
 
 const AboutUs = () => {
   return (
-    <div className='container border-t border-gray-200 pt-4'>
+    <div id='contact' className='container border-t border-gray-200 pt-4'>
         { aboutUs.contact &&
           <div className="">
             <h1 className='text-2xl md:text-2xl font-bold text-gray-900 mb-8'>{aboutUs.contact.title}</h1>
@@ -20,7 +20,7 @@ const AboutUs = () => {
         }
         {
           aboutUs.vision &&
-          <div className="w-full md:w-2/3 mt-24">
+          <div id='values' className="w-full md:w-2/3 mt-24">
             <h1 className='text-2xl md:text-2xl font-bold text-gray-900 mb-8'>{aboutUs.vision.title}</h1>
             {aboutUs.vision.submenu.map((item, key) => (
               <TableOne key={key} item={item} />
