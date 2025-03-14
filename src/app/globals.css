@@ -79,6 +79,10 @@ body {
   }
 }
 
+.beneficent-border-b-4 {
+  border-bottom: 6px solid #5000fd73;
+}
+
 .beneficent {
   font-family: "Tangerine", serif;
   font-style: normal;

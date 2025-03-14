@@ -4,6 +4,7 @@ import React, {useState, useEffect} from 'react'
 import { motion } from "framer-motion";
 import { Button } from '@/components/ui/button';
 import { heroCapture } from '../JSON';
+import Link from 'next/link';
 
 const Hero = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -23,7 +24,8 @@ const Hero = () => {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               {/* Left Column - Image */}
-              <motion.div
+              {/* <motion.div */}
+              <div
                 initial={{ opacity: 0, x: -50 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8 }}
@@ -35,7 +37,8 @@ const Hero = () => {
                   className="mx-auto rounded  transform hover:scale-105 transition-transform duration-300"
                   loading="lazy"
                 />
-              </motion.div>
+              {/* </motion.div> */}
+              </div>
 
               {/* Right Column - Text & CTA */}
               <motion.div
@@ -57,12 +60,14 @@ const Hero = () => {
                   <a href='/about-us' className="rounded outline outline-1 p-1.5 text-sm/6 font-bold md:w-auto hover:bg-indigo-200 transition-all transform-200">
                     About Us <span aria-hidden="true">&rarr;</span>
                   </a>
-                  <Button variant="outline" size="default" className=" text-sm/6 font-semibold text-white-900 md:w-auto">
+                  <Button variant="outline" size="default" className=" text-sm/6 font-semibold text-white-900 md:w-auto ">
                   Find Carers <span aria-hidden="true">&rarr;</span>
                   </Button>
-                  <Button variant="outline" size="default" className="text-sm/6 font-semibold text-white-900 md:w-auto">
-                  Explore Services <span aria-hidden="true">&rarr;</span>
-                  </Button>
+                  <Link href="/services" passHref>
+                    <Button variant="outline" size="default" className="text-sm/6 font-semibold text-white-900 md:w-auto">
+                    Explore Services <span aria-hidden="true">&rarr;</span>
+                    </Button>
+                  </Link>
                   <Button variant="secondary" size="default" className="text-sm/6 font-semibold text-white-900 md:w-auto">
                     Jobs <span aria-hidden="true">&rarr;</span>
                   </Button>

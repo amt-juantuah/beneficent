@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import {
   Dialog,
@@ -32,9 +32,30 @@ import { Button } from '@/components/ui/button'
 
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
+  const [isScrolledUp, setIsScrolledUp] = useState(true);
+  let lastScrollY = 0;
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY < lastScrollY) {
+        setIsScrolledUp(false); // Scrolling up
+      } else {
+        setIsScrolledUp(true); // Scrolling down
+      }
+      lastScrollY = currentScrollY;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="bg-white">
-      <nav aria-label="Global" className="mx-auto flex  items-center justify-between pb-6">
+    <header className={`bg-white sticky z-50 top-0 shadow-md transition-all duration-300 ${
+      isScrolledUp ? "beneficent-border-b-4" : ""
+    }`}>
+      <nav aria-label="Global" className="mx-auto flex  items-center justify-between">
         <div className="flex lg:flex-1 mr-10">
           <a href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Beneficent CS</span>
@@ -42,7 +63,7 @@ export default function Header() {
               alt=""
               src="/assets/logos/10.png"
               className=""
-              width={300} height={150}
+              width={200} height={120}
             />
           </a>
         </div>
@@ -118,7 +139,7 @@ export default function Header() {
       </nav>
       <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
         <div className="fixed inset-0 z-10" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Beneficent CS</span>
