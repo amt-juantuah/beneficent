@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from '@/app/_components/Header'
-import Care from '@/app/_components/ServicePack/CareService/Care'
+import Header from '../../_components/Header'
+import Care from '../../_components/ServicePack/CareService/Care'
 
 function Page() {
   return (
