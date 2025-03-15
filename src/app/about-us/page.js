@@ -5,7 +5,6 @@ import Header from '../_components/Header';
 export default function Home() {
     return (
       <div className="container mx-auto p-3 lg:px-4">
-        <Header />
         <AboutUs />
       </div>
     );

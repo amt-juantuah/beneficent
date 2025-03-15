@@ -52,7 +52,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header className={`bg-white sticky z-50 top-0 shadow-md transition-all duration-300 ${
+    <header className={`container mx-auto p-3 lg:px-4 bg-white sticky z-50 top-0 shadow-md transition-all duration-300 ${
       isScrolledUp ? "beneficent-border-b-4" : ""
     }`}>
       <nav aria-label="Global" className="mx-auto flex  items-center justify-between">
