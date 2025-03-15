@@ -2,7 +2,7 @@
 
 import React, {useState, useEffect} from 'react'
 import { motion } from "framer-motion";
-import { Button } from '@/components/ui/button';
+import { Button } from '../../../components/ui/button';
 import { heroCapture } from '../JSON';
 import Link from 'next/link';
 

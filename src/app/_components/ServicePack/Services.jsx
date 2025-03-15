@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { services } from '../JSON';
-import { Button } from '@/components/ui/button';
+import { Button } from '../../../components/ui/button';
 import Link from 'next/link';
 
 
