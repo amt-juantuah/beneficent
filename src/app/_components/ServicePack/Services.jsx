@@ -2,7 +2,8 @@
 
 import React from 'react';
 import { services } from '../JSON';
-import Image from 'next/image';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 
 
 const Services = () => {
@@ -10,16 +11,25 @@ const Services = () => {
         <div className="container mx-auto">
             <div className="flex flex-col gap-10 mt-20">
                 { services.map((item, key) => (
-                    <div key={key} className="p-3 card-floor">
+                    <div key={key} className="group p-3 card-floor">
                         {/* <div className="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                             < item.icon aria-hidden="true" className="size-6 text-indigo-600 group-hover:text-indigo-200" />
                         </div> */}
                         {/* <h1 className='font-semibold py-2 text-xl text-gray-900'>{key + 1}. {item.step}</h1> */}
-                        <div className='grid grid-cols-1 md:grid-cols-2 justify-between pb-4'>
+                        <div className=' grid grid-cols-1 md:grid-cols-2 justify-between pb-4'>
                             <div className="flex flex-col py-4">
-                                <h1 className='p-2 mb-4 text-gray-500 text-xl md:text-xl font-bold text-gray-500 bg-[#560a61] border-2 border-[#560a61] max-w-[220px]'>{item.name}</h1>
+                                <h1 className='p-2 mb-4 text-xl md:text-xl font-bold text-[#fafafa] bg-[#560a61] border-2 border-[#560a61] max-w-[220px] group-hover:border-2 group-hover:bg-transparent group-hover:text-[#560a61]'>{item.name}</h1>
                                 <div className="size-3 border bg-gradient-radial from-indigo-500 to-indigo-600t"></div>
                                 <h2 className='py-4 md:pt-14 text-gray-500'>{item.description}</h2>
+                                <Link href={item.href} passHref>
+                                    <Button variant="link" size="normal" className=" text-sm/6 font-semibold text-[#3b68fb] justify-start">
+                                        See More
+                                        <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                                            <path d="M5 19L19 5"></path>
+                                            <path d="M5 5h14v14"></path>
+                                        </svg>
+                                    </Button>
+                                </Link>
                             </div>
                             <div 
                                 className='bg-white rounded w-full h-[50vh] md:h-full bg-cover bg-center'
