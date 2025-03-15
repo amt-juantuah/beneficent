@@ -18,10 +18,10 @@ const Services = () => {
                         {/* <h1 className='font-semibold py-2 text-xl text-gray-900'>{key + 1}. {item.step}</h1> */}
                         <div className='grid grid-cols-1 md:grid-cols-2 justify-between pb-4'>
                             <div className="flex flex-col py-4">
-                                <h1 className='p-2 mb-4 text-xl md:text-xl font-bold text-[#fafafa] bg-[#560a61] border-2 border-[#560a61] max-w-[220px] group-hover:border-2 group-hover:bg-transparent group-hover:text-[#560a61] transition-all duration-400'>{item.name}</h1>
+                                <h1 className='p-2 mb-4 text-xl md:text-xl font-bold text-[#fafafa] bg-[#560a61] border-2 border-[#560a61] max-w-[220px] transition-all duration-400'>{item.name}</h1>
                                 <div className="size-3 border bg-gradient-radial from-indigo-500 to-indigo-600t"></div>
                                 <h2 className='py-4 md:pt-14 text-gray-500'>{item.description}</h2>
-                                <Link href={item.href} passHref>
+                                <Link href={item.href} className='w-[100px]' passHref>
                                     <Button variant="link" size="normal" className=" text-sm/6 font-semibold text-[#3b68fb] justify-start">
                                         See More
                                         <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
