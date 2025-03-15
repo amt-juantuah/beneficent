@@ -1,12 +1,12 @@
 import React from 'react'
 import Services from '../_components/ServicePack/Services'
+import Header from '../_components/Header'
 
-const Page = () => {
+export default function Page(){
   return (
     <div className='container mx-auto p-3 lg:px-4'>
-        <Services />
+      <Header />
+      <Services />
     </div>
   )
 }
-
-export default Page
