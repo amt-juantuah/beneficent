@@ -9,6 +9,11 @@ export default {
   ],
   theme: {
   	extend: {
+		backgroundImage: {
+			// Add a custom conic gradient utility
+			'conic-180': 'conic-gradient(180deg, var(--tw-gradient-stops))',
+			'conic-gradient': 'conic-gradient(from 180deg, #4c51bf, #edf2f7, #4c51bf),',
+		  },	
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

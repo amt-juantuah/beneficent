@@ -217,6 +217,101 @@ import { FiTruck, FiUsers } from "react-icons/fi";
       },
     ];
 
+    export const services = [
+     {
+        name: "Care Services",
+        href: "/services/care",
+        description: "Explore the wide range of care services offered by Beneficent.",
+        icon: MdElderly,
+        background: "/assets/images/in_chair_care.jpg",
+        submenu: [
+          { name: "Companionship and a Friend", href: "/services/non-regulated/companionship", description: "Emotional support and social engagement for clients.", icon: IoIosPeople },
+          { name: "Daily Living Support", href: "/services/non-regulated/domestic-assistance", description: "Help with household chores and daily tasks.", icon: FaHandsHelping },
+          { name: "Light Meal Preparation", href: "/services/non-regulated/meal-preparation", description: "Assistance with preparing nutritious meals.", icon: MdOutlineLocalDining },
+          { name: "Errands & Shopping", href: "/services/non-regulated/errands-transportation", description: "Help with errands like shopping.", icon: FaCar },
+          { name: "Lifestyle Support (flowering, reading, etc)", href: "/services/non-regulated/lifestyle-support", description: "Assistance with maintaining a fulfilling lifestyle.", icon: IoIosCalendar }
+        ]
+      },
+      {
+        name: "Industrial Cleaning",
+        href: "/services/cleaning",
+        description: "Discover cleaning services provided by Beneficent.",
+        icon: CogIcon,
+        background: "/assets/images/cleaning-team.jpg",
+        submenu: [
+          {
+            name: "Home Move-In / Move-Out Cleaning",
+            href: "/cleaning/home-move-cleaning",
+            description: "Thorough cleaning for homes before moving in and after moving out.",
+            icon: BsFillHouseFill,
+          },
+          {
+            name: "Offices and New House Cleaning",
+            href: "/cleaning/new-house-cleaning",
+            description: "Professional cleaning for new properties and office environments.",
+            icon: BiBuildingHouse,
+          },
+          {
+            name: "Construction and Commercial Cleaning",
+            href: "/cleaning/construction-cleaning",
+            description: "Post-construction cleaning for safe and tidy spaces.",
+            icon: AiOutlineSafetyCertificate,
+          },
+          {
+            name: "House Cleaning",
+            href: "/cleaning/house-cleaning",
+            description: "Comprehensive cleaning solutions for homes.",
+            icon: MdOutlineLocalDining,
+          },
+          {
+            name: "Kitchen Deep Cleaning",
+            href: "/cleaning/kitchen-deep-cleaning",
+            description: "Intensive kitchen cleaning services for residential and commercial properties.",
+            icon: AiOutlineSchedule,
+          },
+        ],
+      },
+      {
+        name: "Staffing Agency",
+        href: "/services/staffing",
+        description: "Discover Staffing support services provided by Beneficent.",
+        icon: CogIcon,
+        background: "/assets/images/staffing-team.jpg",
+        submenu: [
+          {
+            name: "Care & Support Workers",
+            href: "/staffing/care-workers",
+            description: "Experienced care workers available for home and facility care.",
+            icon: IoIosPeople,
+          },
+          {
+            name: "Nurses",
+            href: "/staffing/nurses",
+            description: "Qualified nurses for medical care and support.",
+            icon: FaUserNurse,
+          },
+          {
+            name: "Hotel and Factory Workers",
+            href: "/staffing/hotel-factory-workers",
+            description: "Reliable staffing for hotels, factories, and industrial sites.",
+            icon: RiHotelLine,
+          },
+          {
+            name: "Kitchen Assistants",
+            href: "/staffing/kitchen-assistants",
+            description: "Skilled kitchen staff to assist with food preparation and hygiene.",
+            icon: FaHandsHelping,
+          },
+          {
+            name: "Kitchen Porters",
+            href: "/staffing/kitchen-porters",
+            description: "Support staff for maintaining kitchen cleanliness and efficiency.",
+            icon: GiChefToque,
+          },
+        ]
+      }
+    ]
+
     
     export const navbarItems = [
         // {
