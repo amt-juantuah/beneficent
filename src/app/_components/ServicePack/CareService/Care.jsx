@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
 import { services } from '../../JSON'
-import { Button } from '@/components/ui/button'
 
 const Care = (Prop) => {
   const service = services.find(element => element.area.toLowerCase() === Prop.slug)
