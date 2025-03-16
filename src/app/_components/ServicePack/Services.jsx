@@ -4,6 +4,7 @@ import React from 'react';
 import { services } from '../JSON';
 import { Button } from '../../../components/ui/button';
 import Link from 'next/link';
+import Image from 'next/image';
 
 
 const Services = () => {
@@ -31,11 +32,13 @@ const Services = () => {
                                     </Button>
                                 </Link>
                             </div>
-                            <div 
-                                className='bg-white rounded w-full h-[50vh] md:h-full bg-cover bg-center'
-                                style={{ backgroundImage: `url(${item.background})` }}
-                            >
+                            <div className='bg-white rounded-xl w-full h-full md:h-full bg-cover bg-center'>
+                                <img 
+                                    src={item.background}
+                                    className="inset-0 w-full h-full object-cover rounded-xl" alt="Background"
+                                />
                             </div>
+                            
                         </div>
                         {/* ...... subservices list ...... */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-between">

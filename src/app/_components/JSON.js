@@ -220,6 +220,7 @@ import { FiTruck, FiUsers } from "react-icons/fi";
     export const services = [
      {
         name: "Care Services",
+        area: "care",
         href: "/services/care",
         description: "Explore the wide range of care services offered by Beneficent.",
         icon: MdElderly,
@@ -234,6 +235,7 @@ import { FiTruck, FiUsers } from "react-icons/fi";
       },
       {
         name: "Industrial Cleaning",
+        area: "cleaning",
         href: "/services/cleaning",
         description: "Discover cleaning services provided by Beneficent.",
         icon: CogIcon,
@@ -273,6 +275,7 @@ import { FiTruck, FiUsers } from "react-icons/fi";
       },
       {
         name: "Staffing Agency",
+        area: "staffing",
         href: "/services/staffing",
         description: "Discover Staffing support services provided by Beneficent.",
         icon: CogIcon,
