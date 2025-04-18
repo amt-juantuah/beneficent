@@ -4,7 +4,6 @@ import React from 'react';
 import { services } from '../JSON';
 import { Button } from '../../../components/ui/button';
 import Link from 'next/link';
-import Image from 'next/image';
 
 
 const Services = () => {
@@ -12,7 +11,7 @@ const Services = () => {
         <div className="container mx-auto">
             <div className="flex flex-col gap-10 mt-20">
                 { services.map((item, key) => (
-                    <div key={key} className="group p-3 card-floor pb-12 mb-12">
+                    <div key={key} className={`group p-3 card-floor pb-12 mb-12`}>
                         {/* <div className="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                             < item.icon aria-hidden="true" className="size-6 text-indigo-600 group-hover:text-indigo-200" />
                         </div> */}
@@ -21,7 +20,7 @@ const Services = () => {
                             <div className="flex flex-col py-4">
                                 <h1 className='p-2 mb-4 text-xl md:text-xl font-bold text-[#fafafa] bg-[#560a61] border-2 border-[#560a61] max-w-[220px] transition-all duration-400'>{item.name}</h1>
                                 <div className="size-3 border bg-gradient-radial from-indigo-500 to-indigo-600t"></div>
-                                <h2 className='py-4 md:pt-14 text-gray-500'>{item.description}</h2>
+                                <h2 className='py-4 md:pt-14 text-base md:text-xl text-gray-900'>{item.description}</h2>
                                 <Link href={item.href} className='w-[100px]' passHref>
                                     <Button variant="link" size="normal" className=" text-sm/6 font-semibold text-[#3b68fb] justify-start">
                                         See More
@@ -51,7 +50,12 @@ const Services = () => {
                                         <p className='font-semibold py-2 text-base text-gray-600'>{itx.name}</p>
                                         <p className='py-4 text-gray-500'>{itx.description}</p>
                                     </div>
-                                    <div className="bg-white rounded size-32 min-w-32"></div>
+                                    <div className="bg-white rounded size-32 min-w-32">
+                                        <img
+                                            src={itx.image}
+                                            className="inset-0 w-full h-full object-cover rounded" alt="Background"
+                                        />
+                                    </div>
                                 </div>))}
                         </div>
 

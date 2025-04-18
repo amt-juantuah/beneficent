@@ -23,10 +23,10 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
-import { 
+import {
   navbarItems,
   callsToAction
- } from './JSON'
+} from './JSON'
 import { Button } from '../../components/ui/button'
 
 
@@ -52,9 +52,8 @@ export default function Header() {
   }, []);
 
   return (
-    <header className={`container bg-white sticky z-50 top-0 shadow-md transition-all duration-300 ${
-      isScrolledUp ? "beneficent-border-b-4" : ""
-    }`}>
+    <header className={`container bg-white sticky z-50 top-0 shadow-md transition-all duration-300 ${isScrolledUp ? "beneficent-border-b-4" : ""
+      }`}>
       <nav aria-label="Global" className="mx-auto flex  items-center justify-between">
         <div className="flex lg:flex-1 mr-10">
           <a href="/" className="-m-1.5 p-1.5">

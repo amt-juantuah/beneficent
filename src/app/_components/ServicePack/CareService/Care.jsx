@@ -1,16 +1,19 @@
-import Link from 'next/link'
-import React from 'react'
+"use client"
+
+import React, { useState } from 'react'
 import { services } from '../../JSON'
+import Link from 'next/link'
+
+import { AiOutlineClose } from 'react-icons/ai'
 
 const Care = (Prop) => {
   const service = services.find(element => element.area.toLowerCase() === Prop.slug)
 
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className='container w-auto pt-10'>
       <Link href='/services' className=" text-sm/6 font-semibold text-[#3b68fb] justify-start">
-
-
-
         <button type="button" className="text-white bg-[#2557D6] hover:bg-[#2557D6]/90 focus:ring-4 focus:ring-[#2557D6]/50 focus:outline-none font-medium rounded-lg text-sm px-2 py-2 items-center inline-flex items-center dark:focus:ring-[#2557D6]/50 me-2 mb-2 gap-2">
           <div className="flex size-9 flex-none items-center justify-center rounded-full bg-white shadow group-hover:bg-white">
             <img className='h-[90%] w-[90%] rounded-full' src="/assets/logos/12.png" />
@@ -28,7 +31,7 @@ const Care = (Prop) => {
           <div className="flex flex-col py-4">
             <h1 className='p-2 mb-4 text-xl md:text-xl font-bold text-[#fafafa] bg-[#560a61] border-2 border-[#560a61] max-w-[220px] transition-all duration-400'>{service.name}</h1>
             <div className="size-3 border bg-gradient-radial from-indigo-500 to-indigo-600t"></div>
-            <h2 className='py-4 md:pt-14 text-gray-500'>{service.description}</h2>
+            <h2 className='py-4 md:pt-14 text-base md:text-xl text-gray-900'>{service.description}</h2>
           </div>
           <div className='bg-white rounded-xl w-full h-full md:h-full bg-cover bg-center'>
             <img
@@ -41,15 +44,40 @@ const Care = (Prop) => {
         {/* ...... subservices list ...... */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-between">
           {service.submenu.map((itx, idx) => (
-            <div key={idx} className="group p-3 card-set-color rounded-md shadow hover:shadow-xl transition-all duration-200 flex flex-row items-center justify-between">
-              <div className=''>
+            <div id={itx.id} key={idx} className="group p-3 card-set-color rounded-md shadow hover:shadow-xl transition-all duration-200 flex flex-row items-center justify-between">
+              <div onClick={() => setIsOpen(true)} className='cursor-pointer'>
                 <div className="flex size-9 flex-none items-center justify-center rounded-lg bg-white shadow group-hover:bg-white">
                   <itx.icon aria-hidden="true" className="size-6 text-[#8400a5] group-hover:text-[#8400a5]" />
                 </div>
                 <p className='font-semibold py-2 text-base text-gray-600'>{itx.name}</p>
                 <p className='py-4 text-gray-500'>{itx.description}</p>
               </div>
-              <div className="bg-white rounded size-32 min-w-32"></div>
+              <div onClick={() => setIsOpen(true)} className="cursor-pointer bg-white rounded size-32 min-w-32">
+                <img
+                  src={itx.image}
+                  className="inset-0 w-full h-full object-cover rounded-xl" alt="Background"
+                />
+              </div>
+
+              {/* Modal */}
+              {isOpen && (
+                <div 
+                  className="fixed inset-0 flex items-center justify-center bg-cover bg-center bg-opacity-60 z-50"
+                  style={{ backgroundImage: `url(${itx.image})` }}
+                >
+                  <div className="bg-white p-6 rounded-lg max-w-md w-full shadow-lg relative">
+                    <h2 className="text-xl font-bold mb-4">Modal </h2>
+                    <p className="text-gray-700 mb-4">{ itx.longDescription }</p>
+                    
+                    <button 
+                      onClick={() => { setIsOpen(false) }} 
+                      className="absolute shadow-md border border-red-500 hover:border-red-600 hover:bg-[#73008f] transition top-4 right-4 "
+                    >
+                      <AiOutlineClose className="text-red-900 hover:text-white" size={24} />
+                    </button>
+                  </div>
+                </div>
+              )}
             </div>))}
         </div>
 
