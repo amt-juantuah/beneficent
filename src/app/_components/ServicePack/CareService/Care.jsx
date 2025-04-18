@@ -3,6 +3,7 @@
 import React, { useState } from 'react'
 import { services } from '../../JSON'
 import Link from 'next/link'
+import Image from 'next/image'
 
 import { AiOutlineClose } from 'react-icons/ai'
 
@@ -62,12 +63,22 @@ const Care = (Prop) => {
               {/* Modal */}
               {activeModal === itx.id && (
                 <div 
-                  className="fixed inset-0 flex items-center justify-center bg-cover bg-center bg-opacity-60 z-50"
+                  className="fixed inset-0 flex flex-col gap-10 items-center justify-center bg-cover bg-center bg-opacity-60 z-50"
                   style={{ backgroundImage: `url(${itx.image})` }}
                 >
-                  <div className="bg-white p-6 rounded-lg max-w-md w-full shadow-lg relative">
-                    <h2 className="text-xl font-bold mb-4">Modal </h2>
-                    <p className="text-gray-700 mb-4">{ itx.longDescription }</p>
+                  <div className="fixed top-[15px] left-[15px] rounded-full flex lg:flex-1 mr-10 z-50">
+                    <a href="/" className="-m-1.5 p-1.5">
+                      <span className="sr-only">Beneficent CS</span>
+                      <Image
+                        alt=""
+                        src="/assets/logos/12.png"
+                        className="rounded-full"
+                        width={50} height={50}
+                      />
+                    </a>
+                  </div>
+                  <div className="bg-white p-6 rounded-lg max-w-3xl w-full shadow-lg relative">
+                    <h2 className="text-xl font-bold ">{itx.name} </h2>
                     
                     <button 
                       onClick={() => setActiveModal(null)} 
@@ -76,7 +87,13 @@ const Care = (Prop) => {
                       <AiOutlineClose className="text-red-900 hover:text-white" size={24} />
                     </button>
                   </div>
+                  <div className="bg-white p-6 rounded-lg max-w-3xl max-h-fit overflow-scroll w-full shadow-lg relative">
+                    <h2 className="text-lg font-bold mb-4 text-[#008b8b]">{itx.description} </h2>
+                    < itx.icon />
+                
+                    <p className="text-gray-700 mb-4">{ itx.longDescription }</p>
                   </div>
+                </div>
               )}
             </div>
           ))}
