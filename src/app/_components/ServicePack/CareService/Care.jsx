@@ -9,7 +9,7 @@ import { AiOutlineClose } from 'react-icons/ai'
 const Care = (Prop) => {
   const service = services.find(element => element.area.toLowerCase() === Prop.slug)
 
-  const [isOpen, setIsOpen] = useState(false);
+  const [activeModal, setActiveModal] = useState(null);
 
   return (
     <div className='container w-auto pt-10'>
@@ -45,14 +45,14 @@ const Care = (Prop) => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 justify-between">
           {service.submenu.map((itx, idx) => (
             <div id={itx.id} key={idx} className="group p-3 card-set-color rounded-md shadow hover:shadow-xl transition-all duration-200 flex flex-row items-center justify-between">
-              <div onClick={() => setIsOpen(true)} className='cursor-pointer'>
+              <div onClick={() => setActiveModal(itx.id)} className='cursor-pointer'>
                 <div className="flex size-9 flex-none items-center justify-center rounded-lg bg-white shadow group-hover:bg-white">
                   <itx.icon aria-hidden="true" className="size-6 text-[#8400a5] group-hover:text-[#8400a5]" />
                 </div>
                 <p className='font-semibold py-2 text-base text-gray-600'>{itx.name}</p>
                 <p className='py-4 text-gray-500'>{itx.description}</p>
               </div>
-              <div onClick={() => setIsOpen(true)} className="cursor-pointer bg-white rounded size-32 min-w-32">
+              <div onClick={() => setActiveModal(itx.id)} className="cursor-pointer bg-white rounded size-32 min-w-32">
                 <img
                   src={itx.image}
                   className="inset-0 w-full h-full object-cover rounded-xl" alt="Background"
@@ -60,7 +60,7 @@ const Care = (Prop) => {
               </div>
 
               {/* Modal */}
-              {isOpen && (
+              {activeModal === itx.id && (
                 <div 
                   className="fixed inset-0 flex items-center justify-center bg-cover bg-center bg-opacity-60 z-50"
                   style={{ backgroundImage: `url(${itx.image})` }}
@@ -70,15 +70,16 @@ const Care = (Prop) => {
                     <p className="text-gray-700 mb-4">{ itx.longDescription }</p>
                     
                     <button 
-                      onClick={() => { setIsOpen(false) }} 
+                      onClick={() => setActiveModal(null)} 
                       className="absolute shadow-md border border-red-500 hover:border-red-600 hover:bg-[#73008f] transition top-4 right-4 "
                     >
                       <AiOutlineClose className="text-red-900 hover:text-white" size={24} />
                     </button>
                   </div>
-                </div>
+                  </div>
               )}
-            </div>))}
+            </div>
+          ))}
         </div>
 
       </div>
