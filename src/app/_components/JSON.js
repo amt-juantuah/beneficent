@@ -134,6 +134,67 @@ import { FiTruck, FiUsers } from "react-icons/fi";
 //       }
 //     ]
 
+
+export const testimonials = [
+  {
+    "name": "Janey Lawry",
+    "image": "/assets/images/client1.jpg",
+    "description": "Beneficent's care services were a lifesaver for our family. Their staff is friendly and very professional. They really took the time to understand my needs and provided the highest level of care!",
+    "role": "Client",
+    "ratings": 4.6
+  },
+  {
+    "name": "Carlos Laurenzo",
+    "image": "/assets/images/client2.jpg",
+    "description": "I have been using Beneficent’s cleaning service for months now, and I couldn’t be happier. They are thorough, reliable, and have an eye for detail. Highly recommended!",
+    "role": "Customer",
+    "ratings": 5
+  },
+  {
+    "name": "Ayesha Khan",
+    "image": "/assets/images/client3.jpg",
+    "description": "The staffing services provided by Beneficent have been excellent. They are quick to respond to our needs and always provide reliable, professional staff members. Great service all around!",
+    "role": "Business Owner",
+    "ratings": 5
+  },
+  {
+    "name": "Robert Brown",
+    "image": "/assets/images/client4.jpg",
+    "description": "I am incredibly grateful to the team at Beneficent for their exceptional care services. They provide excellent support, and my loved one has improved significantly since they started receiving care.",
+    "role": "Family Member",
+    "ratings": 4.5
+  },
+  {
+    "name": "Mariana Garcia",
+    "image": "/assets/images/client5.jpg",
+    "description": "Beneficent’s team is incredibly professional and caring. The care they provide for my elderly mother has been beyond excellent, and I feel so much more at ease knowing she is in good hands.",
+    "role": "Daughter",
+    "ratings": 5
+  },
+  {
+    "name": "David Windouyk",
+    "image": "/assets/images/client6.jpg",
+    "description": "I’ve had the pleasure of working with Beneficent for several months. Their staffing solutions have been invaluable to our organization, providing us with well-qualified and reliable staff.",
+    "role": "HR Manager",
+    "ratings": 4.0
+  },
+  {
+    "name": "Chinara Henshaw",
+    "image": "/assets/images/client7.jpg",
+    "description": "The cleaning team from Beneficent did an amazing job with my office space. Their attention to detail is exceptional, and the team is always professional. I will definitely use them again.",
+    "role": "Office Manager",
+    "ratings": 5
+  },
+  {
+    "name": "Nathan Clarke",
+    "image": "/assets/images/client8.jpg",
+    "description": "I’ve used Beneficent’s services for my elderly parents, and they’ve been fantastic. The care staff are attentive and genuinely compassionate, making the experience much easier for all of us.",
+    "role": "Son",
+    "ratings": 5
+  }
+]
+
+
 export const callsToAction = [
   { name: 'See us working', href: '#', icon: PlayCircleIcon },
   { name: 'Contact Office', href: 'tel:07438731206', icon: PhoneIcon },

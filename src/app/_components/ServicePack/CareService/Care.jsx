@@ -66,7 +66,7 @@ const Care = (Prop) => {
                   className="fixed inset-0 flex flex-col gap-10 items-center justify-center bg-cover bg-center bg-opacity-60 z-50"
                   style={{ backgroundImage: `url(${itx.image})` }}
                 >
-                  <div className="fixed top-[15px] left-[15px] rounded-full flex lg:flex-1 mr-10 z-50">
+                  <div className="fixed top-[15px] left-[15px] rounded-full flex lg:flex-1 mr-10 z-50r">
                     <a href="/" className="-m-1.5 p-1.5">
                       <span className="sr-only">Beneficent CS</span>
                       <Image

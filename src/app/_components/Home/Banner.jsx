@@ -6,28 +6,16 @@ import { services } from '../JSON';
 import Link from 'next/link';
 
 const Banner = () => {
-  const [scrollY, setScrollY] = useState(0);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
 
   return (
-      <div className="bg-white w-full h-full">
+      <div className="bg-[#FAEBD7] w-full h-full">
         <div className="relative overflow-hidden ">
+          <h4 className='text-[#990000] text-lg font-bold italic px-4 sm:px-6 lg:px-8 py-10'>&mdash; Specialised Services</h4>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           { services.map(  (item, index) => (
-            <div key={index} className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-20 items-center">
+            <div key={index} className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-32 items-center">
               {/* Left Column - Text & CTA */}              
-              <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
+              <div
                 className="text-center md:text-left"
               >
                 <h4 className="text-4xl md:text-3xl font-bold text-indigo-600 mb-6">
@@ -45,16 +33,11 @@ const Banner = () => {
                     Explore further
                   </motion.button>
                 </Link>
-              </motion.div>
+              </div>
 
 
               {/* Right Column - image */}
-              <motion.div
-                initial={{ opacity: 0, x: -50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-                className="relative grid grid-cols-2 gap-4"
-              >
+              <div className="relative grid grid-cols-2 gap-4" >
 
                 {item.submenu.slice(0,4).map((itx, idx) => (
                   <img key={itx.id}
@@ -64,8 +47,7 @@ const Banner = () => {
                     loading="lazy"
                   />
                 ))}
-
-              </motion.div>
+              </div>
             </div>
             ))}
           </div>
@@ -75,29 +57,3 @@ const Banner = () => {
 }
 
 export default Banner
-
-
-{/* <img
-                  src="/assets/images/care1.jpg"
-                  alt="Carer"
-                  className="mx-auto shadow-2xl transform hover:scale-105 transition-transform duration-300"
-                  loading="lazy"
-                />
-                <img
-                  src="/assets/images/care1.jpg"
-                  alt="Carer"
-                  className="mx-auto shadow-2xl transform hover:scale-105 transition-transform duration-300"
-                  loading="lazy"
-                />
-                <img
-                  src="/assets/images/care1.jpg"
-                  alt="Carer"
-                  className=" mx-auto shadow-2xl transform hover:scale-105 transition-transform duration-300"
-                  loading="lazy"
-                />
-                <img
-                  src="/assets/images/care1.jpg"
-                  alt="Carer"
-                  className="mx-auto shadow-2xl transform hover:scale-105 transition-transform duration-300"
-                  loading="lazy"
-                /> */}

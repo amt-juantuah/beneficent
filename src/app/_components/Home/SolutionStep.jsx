@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 
 
 const SolutionStep = () => {
-    const [greeting, setGreeting] = useState(0);
+    const [greeting, setGreeting] = useState(null);
     const greet = ["Good Morning ☀️", "Good Afternoon 🌤️", "Good Evening 🌙"]
     const weather = ["bg-orange-200", "bg-blue-300", "bg-indigo-900"]
 
