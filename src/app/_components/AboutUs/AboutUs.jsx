@@ -3,7 +3,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { aboutUs } from '../JSON'
-import TableOne from '../../../../components/tableOne'
+import TableOne from '../../../components/tableOne'
 
 const AboutUs = () => {
   return (
