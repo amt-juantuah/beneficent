@@ -37,18 +37,19 @@ const SolutionStep = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-between">
             {servicesSteps.map((item, key) => (
-            <div key={key} className="group p-3 bg-gray-100 rounded-md shadow-lg hover:shadow-xl transition-transform">
+            <div data-aos="fade-up"
+              data-aos-anchor-placement="center-bottom" key={key} className="group p-3 bg-gray-100 rounded-md shadow-lg hover:shadow-xl transition-transform">
                 <div className="flex size-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
                     <item.icon aria-hidden="true" className="size-6 text-indigo-600 group-hover:text-indigo-200" />
                 </div>
                 <h1 className='font-semibold py-2 text-xl text-gray-900'>{key+1}. {item.step}</h1>
                 <p className='py-4 text-gray-500'>{item.detail}</p>
             </div>))}
-            <div className="group p-3 rounded-md shadow-lg bg-[url('/assets/images/handshake.jpg')] bg-cover bg-center min-h-[200px] cursor-pointer flex items-end hover:shadow-xl">
-            <a href={`tel:${actionPoint.telX}`} className="text-indigo-600 bg-white p-4 rounded flex items-center gap-5 group-hover:text-white group-hover:bg-indigo-600 group-hover:transition-all duration-500 text-lg transition-transform">
-                Let's Get Started
-                <FaHandsHelping />
-            </a>
+            <div data-aos="flip-right" className="group p-3 rounded-md shadow-lg bg-[url('/assets/images/handshake.jpg')] bg-cover bg-center min-h-[200px] cursor-pointer flex items-end hover:shadow-xl">
+              <a href={`tel:${actionPoint.telX}`} className="text-indigo-600 bg-white p-4 rounded flex items-center gap-5 group-hover:text-white group-hover:bg-indigo-600 group-hover:transition-all duration-500 text-lg transition-transform">
+                  Let's Get Started
+                  <FaHandsHelping />
+              </a>
             </div>
         </div>
     </div>

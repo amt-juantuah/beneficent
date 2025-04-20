@@ -134,6 +134,26 @@ import { FiTruck, FiUsers } from "react-icons/fi";
 //       }
 //     ]
 
+export const footerContent = {
+  "brand": "Beneficent",
+  "tagline": "Providing care, cleaning, and staffing solutions with compassion and excellence.",
+  "links": [
+    { "label": "About", "href": "/about-us" },
+    { "label": "Care", "href": "/services/care" },
+    { "label": "Cleaning", "href": "/services/cleaning" },
+    { "label": "Staffing", "href": "/services/staffing" },
+    { "label": "FAQ", "href": "/faq" },
+    { "label": "Contact", "href": "/about-us/#contact" },
+    { "label": "Privacy Policy", "href": "/" }
+  ],
+  "socials": [
+    { "icon": "FaFacebookF", "url": "https://www.facebook.com" },
+    { "icon": "FaInstagram", "url": "https://www.instagram.com" },
+    { "icon": "FaLinkedinIn", "url": "https://www.linkedin.com" }
+  ]
+}
+
+
 
 export const testimonials = [
   {
@@ -633,4 +653,144 @@ export const navbarItems = [
   //   description: "Read the latest updates, articles, and care tips from Beneficent.",
   //   icon: NewspaperIcon
   // }
+]
+
+
+export const faqs = [
+  {
+    "question": "What services does Beneficent provide?",
+    "answer": "Beneficent offers a wide range of services, including care services, industrial cleaning, staffing solutions, and tailored healthcare services to meet individual needs."
+  },
+  {
+    "question": "Are your staff members qualified and trained?",
+    "answer": "Yes, all of our staff undergoes extensive training and certification to ensure high-quality services, including background checks to ensure client safety."
+  },
+  {
+    "question": "How can I book a service with Beneficent?",
+    "answer": "You can easily book a service through our online form, by calling our customer service, or by visiting our service pages for more details on the booking process."
+  },
+  {
+    "question": "Do you offer services on weekends or holidays?",
+    "answer": "Yes, we offer flexible services on weekends and holidays based on your needs. Our team is available for emergency requests as well."
+  },
+  {
+    "question": "What is the minimum service requirement?",
+    "answer": "Each service may have different requirements, but we aim to provide flexibility. Please contact us for detailed information about service packages and minimum requirements."
+  },
+  {
+    "question": "How can I cancel or reschedule my service?",
+    "answer": "You can cancel or reschedule your service by contacting our customer support team at least 24 hours before your scheduled appointment."
+  },
+  {
+    "question": "Do you offer personalized care plans?",
+    "answer": "Yes, we offer customized care plans that are designed according to each individual's unique needs and preferences. We work closely with clients to develop the best solution."
+  },
+  {
+    "question": "What measures do you take to ensure safety during services?",
+    "answer": "We follow strict safety protocols, including regular training, risk assessments, and safety equipment, to ensure that services are delivered safely and securely."
+  },
+  {
+    "question": "Can I change the caregiver assigned to me?",
+    "answer": "Yes, you can request a different caregiver if you feel it is necessary. We aim to ensure your comfort and satisfaction with our services."
+  },
+  {
+    "question": "How do I make a complaint about a service?",
+    "answer": "If you have any concerns or complaints, please contact our customer support team immediately. We are committed to resolving any issues as quickly as possible."
+  },
+  {
+    "question": "Do you have any package deals for multiple services?",
+    "answer": "Yes, we offer package deals that allow you to bundle services and receive discounts. Contact us for more information on available packages."
+  },
+  {
+    "question": "Can I request a specific time for service?",
+    "answer": "Yes, you can request a specific time, and we will do our best to accommodate your preferences based on availability."
+  },
+  {
+    "question": "What types of cleaning services do you offer?",
+    "answer": "We offer a variety of cleaning services, including industrial cleaning, commercial cleaning, residential cleaning, and deep cleaning services tailored to your needs."
+  },
+  {
+    "question": "How do I know if I need a deep cleaning?",
+    "answer": "A deep cleaning is recommended if you need more thorough cleaning than regular cleaning, such as for spring cleaning, after renovation, or if your space has accumulated heavy dirt and grime."
+  },
+  {
+    "question": "Do you offer cleaning services for businesses?",
+    "answer": "Yes, we provide commercial and industrial cleaning services, ensuring that your workspace is clean, safe, and well-maintained."
+  },
+  {
+    "question": "What cleaning products do you use?",
+    "answer": "We use eco-friendly and non-toxic cleaning products wherever possible to ensure a safe environment for both our clients and staff."
+  },
+  {
+    "question": "How often should I schedule cleaning services?",
+    "answer": "The frequency of cleaning services depends on the type of space and usage. We recommend regular cleanings based on your needs and preferences."
+  },
+  {
+    "question": "Can I book a one-time cleaning service?",
+    "answer": "Yes, you can book a one-time cleaning service. We offer flexible options for both one-time and recurring cleanings."
+  },
+  {
+    "question": "How do I get a quote for services?",
+    "answer": "You can get a quote by visiting our website, filling out the service request form, or contacting our customer support team to discuss your needs."
+  },
+  {
+    "question": "Do you provide staffing services for short-term and long-term needs?",
+    "answer": "Yes, we provide staffing services for both short-term and long-term needs, whether for special projects or ongoing assistance."
+  },
+  {
+    "question": "How do you vet your staff?",
+    "answer": "All staff members undergo a thorough vetting process, which includes background checks, reference checks, and skills assessments to ensure they meet our high standards."
+  },
+  {
+    "question": "Can I request temporary or seasonal staff?",
+    "answer": "Yes, we provide temporary and seasonal staffing solutions tailored to your business needs, whether for holidays, peak seasons, or short-term projects."
+  },
+  {
+    "question": "What industries do you provide staffing services for?",
+    "answer": "We provide staffing services for various industries, including healthcare, retail, hospitality, office support, manufacturing, and more."
+  },
+  {
+    "question": "Are your staffing services flexible?",
+    "answer": "Yes, we offer flexible staffing services to suit your specific needs, whether you need part-time, full-time, or temporary workers."
+  },
+  {
+    "question": "How do you handle the onboarding process for new staff?",
+    "answer": "We handle the entire onboarding process, including training, orientation, and ensuring that new staff members are well-prepared for their roles."
+  },
+  {
+    "question": "What should I do if I need to make a change to my staffing requirements?",
+    "answer": "Please contact our staffing team as soon as possible, and we will make adjustments to meet your updated requirements."
+  },
+  {
+    "question": "Do you provide healthcare staffing solutions?",
+    "answer": "Yes, we offer healthcare staffing solutions for both short-term and long-term placements, including nurses, support staff, and caregivers."
+  },
+  {
+    "question": "How do I become a caregiver or staff member with Beneficent?",
+    "answer": "If you are interested in working with Beneficent, you can apply through our website. We look for individuals who are passionate about providing excellent service and care."
+  },
+  {
+    "question": "Do you offer services for elderly or disabled individuals?",
+    "answer": "Yes, we provide specialized care services for elderly and disabled individuals, ensuring their comfort, safety, and well-being."
+  },
+  {
+    "question": "How can I get in touch with Beneficent customer support?",
+    "answer": "You can contact our customer support team by calling our helpline, emailing us, or using the live chat feature on our website."
+  },
+  {
+    "question": "What is the best way to pay for services?",
+    "answer": "We offer multiple payment options, including credit/debit card payments, bank transfers, and invoicing for larger projects."
+  },
+  {
+    "question": "Do you offer discounts for first-time customers?",
+    "answer": "Yes, we offer a special discount for first-time customers. Please contact us for more details."
+  },
+  {
+    "question": "How do you ensure the quality of your services?",
+    "answer": "We have a strict quality assurance process in place, including regular training, performance reviews, and client feedback to maintain the highest service standards."
+  },
+  {
+    "question": "Are your services covered by insurance?",
+    "answer": "Yes, our services are covered by comprehensive insurance to ensure peace of mind for our clients."
+  }
 ]

@@ -43,8 +43,8 @@ const Testimonial = () => {
       >
         {/* Testimonials */}
         { testimonials.map((testimonial, index) => (
-        <SwiperSlide key={index} className="relative bg-gradient-to-br from-white to-gray-50 shadow-xl rounded-lg overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-transform duration-300">
-        <div className="relative">
+        <SwiperSlide  key={index} className="relative bg-gradient-to-br from-white to-gray-50 shadow-xl rounded-lg overflow-hidden hover:shadow-2xl hover:-translate-y-1 transition-transform duration-300">
+        <div className="relative"> 
           <img
             src={testimonial.image}
             alt={testimonial.name}

@@ -1,34 +1,20 @@
 'use client'
 
 import React, {useState, useEffect} from 'react'
-import { motion } from "framer-motion";
 import { Button } from '../../../components/ui/button';
 import { heroCapture } from '../JSON';
 import Link from 'next/link';
 
 const Hero = () => {
-  const [scrollY, setScrollY] = useState(0);
-  
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-
+ 
   return (
       <div className="hero-backg bg-white-500 w-full h-full">
         <div className="relative overflow-hidden ">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               {/* Left Column - Image */}
-              {/* <motion.div */}
-              <div
-                initial={{ opacity: 0, x: -50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
+              <div 
+                data-aos="fade-right"
                 className="relative"
               >
                 <img
@@ -37,14 +23,11 @@ const Hero = () => {
                   className="mx-auto rounded  transform hover:scale-105 transition-transform duration-300"
                   loading="lazy"
                 />
-              {/* </motion.div> */}
               </div>
 
               {/* Right Column - Text & CTA */}
-              <motion.div
-                initial={{ opacity: 0, x: 50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8, delay: 0.2 }}
+              <div 
+                data-aos="zoom-in-up"
                 className="text-center md:text-left"
               >
                 <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -68,9 +51,16 @@ const Hero = () => {
                   <Button variant="secondary" size="default" className="text-sm/6 font-semibold text-white-900 md:w-auto">
                     Jobs <span aria-hidden="true">&rarr;</span>
                   </Button>
-                  <Button variant="outline" size="default" className=" text-sm/6 font-semibold text-white-900 md:w-auto ">
-                    Find Carers <span aria-hidden="true">&rarr;</span>
-                  </Button>
+                  <Link href="/faq" passHref>
+                    <Button variant="outline" size="default" className=" text-sm/6 font-semibold text-white-900 md:w-auto ">
+                      FAQ <span aria-hidden="true">&rarr;</span>
+                    </Button>
+                  </Link>
+                  <Link href="/faq" passHref>
+                    <Button variant="outline" size="default" className=" text-sm/6 font-semibold text-white-900 md:w-auto ">
+                      Ask a Question <span aria-hidden="true">&rarr;</span>
+                    </Button>
+                  </Link>
                   {/* <motion.button
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
@@ -94,12 +84,12 @@ const Hero = () => {
                   </motion.button> */}
                   
                 </div>
-              </motion.div>
+              </div>
             </div>
           </div>
         </div>
       </div>
   )
 }
-// kind, generous, or merciful
+
 export default Hero

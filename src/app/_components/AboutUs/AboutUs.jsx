@@ -1,13 +1,20 @@
 "use client"
 
 import React from 'react'
+import Link from 'next/link'
 import { aboutUs } from '../JSON'
-import TableOne from '../../../components/tableOne'
+import TableOne from '../../../../components/tableOne'
 
 const AboutUs = () => {
   return (
-    <div id='about' className='container border-t border-gray-200 pt-4'>
+    <div id='about' className='container border-t border-gray-200 py-12'>
       <h2 className='text-2xl md:text-xl font-bold text-gray-500 mb-6 underline'>About us</h2>
+      <div className="mt-8 mb-8">
+          <p className="text-lg text-gray-700 mb-4">
+            Have questions? Visit our <Link href="/faq" className="text-indigo-500 hover:underline">FAQ page</Link> for more information.
+          </p>
+        </div>
+        
         { aboutUs.contact &&
           <div id='contact' className="">
             <h1 className='text-2xl md:text-2xl font-bold text-gray-900 mb-8'>{aboutUs.contact.title}</h1>

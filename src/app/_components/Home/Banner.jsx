@@ -13,7 +13,8 @@ const Banner = () => {
           <h4 className='text-[#990000] text-lg font-bold italic px-4 sm:px-6 lg:px-8 py-10'>&mdash; Specialised Services</h4>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
           { services.map(  (item, index) => (
-            <div key={index} className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-32 items-center">
+            <div data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom" key={index} className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-32 items-center">
               {/* Left Column - Text & CTA */}              
               <div
                 className="text-center md:text-left"
