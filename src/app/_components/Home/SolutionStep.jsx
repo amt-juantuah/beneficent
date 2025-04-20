@@ -9,7 +9,7 @@ import { useState, useEffect } from "react";
 const SolutionStep = () => {
     const [greeting, setGreeting] = useState(null);
     const greet = ["Good Morning ☀️", "Good Afternoon 🌤️", "Good Evening 🌙"]
-    const weather = ["bg-orange-200", "bg-blue-300", "bg-indigo-900"]
+    // const weather = ["bg-orange-200", "bg-blue-300", "bg-indigo-900"]
 
   useEffect(() => {
     const getGreeting = () => {
@@ -32,7 +32,7 @@ const SolutionStep = () => {
   return (
     <div className="container">
         <div className="flex flex-col items-center justify-center pt-12 pb-10 sm:pt-12 sm:pb-10 lg:pt-24 lg:pb-16">
-            <h2 className={`text-xl text-center p-4 font-bold text-white rounded ${weather[greeting]}`}>{greet[greeting]}</h2>
+            <h2 className={`text-xl text-center p-4 font-bold text-gray-600 rounded`}>{greet[greeting]}</h2>
             <h1 className='text-3xl text-center p-2 font-semibold text-gray-600'>Our <span className='col-prim'>5 Easy Steps</span>  To The Solution You Need </h1>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-between">
