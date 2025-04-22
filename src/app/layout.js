@@ -14,8 +14,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Beneficent Care & Support",
-  description: "Home of Humility, Love and Generosity",
+  "title": "Beneficent Care & Support",
+  "description": "Home of Humility, Love and Generosity",
+  "viewport": "width=device-width, initial-scale=1.0",
+  "keywords": "home care, private carer, support services, healthcare, London, UK, Beneficent, West London, Harrow, Stanmore, domiciliary care",
+  "author": "Beneficent Care and Support",
+  "robots": "index, follow",
+  "copyright": "© 2025 Beneficent Care and Support",
+  "application-name": "Beneficent",
+  "theme-color": "#0f766e",
+  
 };
 
 export default function RootLayout({ children }) {

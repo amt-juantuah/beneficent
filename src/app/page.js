@@ -17,7 +17,7 @@ export default function Home() {
 
   useEffect(() => {
     AOS.init({
-      duration: 200, // animation duration
+      duration: 400, // animation duration
       easing: 'ease-in-out',
       once: true, // whether animation should happen only once
     })

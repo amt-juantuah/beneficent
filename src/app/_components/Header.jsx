@@ -58,6 +58,7 @@ export default function Header() {
               src="/assets/logos/10.png"
               className=""
               width={200} height={120}
+              loading="lazy"
             />
           </a>
         </div>
@@ -134,6 +135,7 @@ export default function Header() {
                 className=""
                 height={60}
                 width={60}
+                loading="lazy"
               />
             </a>
             <button

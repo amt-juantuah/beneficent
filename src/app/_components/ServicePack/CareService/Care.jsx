@@ -17,7 +17,7 @@ const Care = (Prop) => {
       <Link href='/services' className=" text-sm/6 font-semibold text-[#3b68fb] justify-start">
         <button type="button" className="text-white bg-[#2557D6] hover:bg-[#2557D6]/90 focus:ring-4 focus:ring-[#2557D6]/50 focus:outline-none font-medium rounded-lg text-sm px-2 py-2 items-center inline-flex items-center dark:focus:ring-[#2557D6]/50 me-2 mb-2 gap-2">
           <div className="flex size-9 flex-none items-center justify-center rounded-full bg-white shadow group-hover:bg-white">
-            <img className='h-[90%] w-[90%] rounded-full' src="/assets/logos/12.png" />
+            <img className='h-[90%] w-[90%] rounded-full' src="/assets/logos/12.png" loading="lazy" />
           </div>
           See Other Services
         </button>
@@ -38,6 +38,7 @@ const Care = (Prop) => {
             <img
               src={service.background}
               className="inset-0 w-full h-full object-cover rounded-xl" alt="Background"
+              loading="lazy"
             />
           </div>
 
@@ -57,6 +58,7 @@ const Care = (Prop) => {
                 <img
                   src={itx.image}
                   className="inset-0 w-full h-full object-cover rounded-xl" alt="Background"
+                  loading="lazy"
                 />
               </div>
 
@@ -74,6 +76,7 @@ const Care = (Prop) => {
                         src="/assets/logos/12.png"
                         className="rounded-full"
                         width={50} height={50}
+                        loading="lazy"
                       />
                     </a>
                   </div>

@@ -35,6 +35,7 @@ const Services = () => {
                                 <img 
                                     src={item.background}
                                     className="inset-0 w-full h-full object-cover rounded-xl" alt="Background"
+                                    loading="lazy"
                                 />
                             </div>
                             
@@ -54,6 +55,7 @@ const Services = () => {
                                         <img
                                             src={itx.image}
                                             className="inset-0 w-full h-full object-cover rounded" alt="Background"
+                                            loading="lazy"
                                         />
                                     </div>
                                 </div>))}

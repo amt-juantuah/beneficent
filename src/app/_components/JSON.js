@@ -216,14 +216,14 @@ export const testimonials = [
 
 
 export const callsToAction = [
-  { name: 'See us working', href: '#', icon: PlayCircleIcon },
+  { name: 'See us working', href: '/services', icon: PlayCircleIcon },
   { name: 'Contact Office', href: 'tel:07438731206', icon: PhoneIcon },
 ];
 
 
 export const actionPoint = {
   telX: "07438731206",
-  emY: "beneficentcare@yahoo.com",
+  emY: "info@beneficent.uk",
 }
 
 export const heroCapture = {
@@ -239,7 +239,8 @@ export const aboutUs = {
     street: "79 College Road",
     city: "London",
     area: "Harrow",
-    postcode: "HA1 1BD"
+    postcode: "HA1 1BD",
+    email: "info@beneficent.uk"
   },
   vision: {
     title: "Vision and Values",
@@ -629,12 +630,12 @@ export const navbarItems = [
   {
     name: "Contact Us",
     href: "/about-us",
-    description: "Get in touch with Beneficent's care agency team.",
+    description: "Get in touch with Beneficent's team.",
     icon: PhoneIcon,
     submenu: [
       { "name": "Contact Information", "href": "/about-us/#contact", icon: PhoneIcon, description: "Get in touch with Beneficent by contacting us", },
-      { "name": "Request a Consultation", "href": "about-us#values", icon: AiOutlineSolution, description: "Benefit from our consultation session", },
-      { "name": "Live Chat", "href": "/contact/live-chat", icon: MdChat, description: "Chat with one of our caring respondents" }
+      { "name": "Request a Consultation", "href": "/enquiry", icon: AiOutlineSolution, description: "Benefit from our consultation session", },
+      { "name": "Live Chat", "href": "/enquiry", icon: MdChat, description: "Chat with one of our respondents" }
     ]
   },
   {
@@ -643,8 +644,8 @@ export const navbarItems = [
     description: "Explore career opportunities with Beneficent.",
     icon: BriefcaseIcon,
     submenu: [
-      { "name": "Join Our Team", "href": "/careers/join", icon: RiTeamLine, description: "Send us your CV and job applications" },
-      { "name": "Current Job Openings", "href": "/careers/job-openings", icon: BriefcaseIcon, description: "Explore career opportunities with Beneficent." }
+      { "name": "Join Our Team", "href": "/careers", icon: RiTeamLine, description: "Send us your CV and job applications" },
+      { "name": "Current Job Openings", "href": "/careers", icon: BriefcaseIcon, description: "Explore career opportunities with Beneficent." }
     ]
   },
   // {

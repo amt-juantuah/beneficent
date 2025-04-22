@@ -48,15 +48,17 @@ const Hero = () => {
                     Explore Services <span aria-hidden="true">&rarr;</span>
                     </Button>
                   </Link>
-                  <Button variant="secondary" size="default" className="text-sm/6 font-semibold text-white-900 md:w-auto">
-                    Jobs <span aria-hidden="true">&rarr;</span>
-                  </Button>
+                  <Link href="/careers" passHref>
+                    <Button variant="secondary" size="default" className="text-sm/6 font-semibold text-white-900 md:w-auto">
+                      Jobs <span aria-hidden="true">&rarr;</span>
+                    </Button>
+                  </Link>
                   <Link href="/faq" passHref>
                     <Button variant="outline" size="default" className=" text-sm/6 font-semibold text-white-900 md:w-auto ">
                       FAQ <span aria-hidden="true">&rarr;</span>
                     </Button>
                   </Link>
-                  <Link href="/faq" passHref>
+                  <Link href="/enquiry" passHref>
                     <Button variant="outline" size="default" className=" text-sm/6 font-semibold text-white-900 md:w-auto ">
                       Ask a Question <span aria-hidden="true">&rarr;</span>
                     </Button>
