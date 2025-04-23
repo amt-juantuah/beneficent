@@ -134,6 +134,25 @@ import { FiTruck, FiUsers } from "react-icons/fi";
 //       }
 //     ]
 
+export const cookieCategories = {
+  essential: {
+    name: 'Essential',
+    description: 'Necessary for the website to function properly.',
+    required: true,
+  },
+  analytics: {
+    name: 'Analytics',
+    description: 'Help us understand how visitors interact with the website.',
+    required: false,
+  },
+  marketing: {
+    name: 'Marketing',
+    description: 'Used to deliver personalized ads.',
+    required: false,
+  },
+};
+
+
 export const footerContent = {
   "brand": "Beneficent",
   "tagline": "Providing care, cleaning, and staffing solutions with compassion and excellence.",

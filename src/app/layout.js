@@ -1,7 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import ScrollToTop from "../components/ScrolltoTop";
-
+import CookieConsent from "../components/CookieConsent"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,7 +16,6 @@ const geistMono = Geist_Mono({
 export const metadata = {
   "title": "Beneficent Care & Support",
   "description": "Home of Humility, Love and Generosity",
-  "viewport": "width=device-width, initial-scale=1.0",
   "keywords": "home care, private carer, support services, healthcare, London, UK, Beneficent, West London, Harrow, Stanmore, domiciliary care",
   "author": "Beneficent Care and Support",
   "robots": "index, follow",
@@ -34,6 +33,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}
       >
         {children}
+        <CookieConsent />
         <ScrollToTop />
       </body>
     </html>
